@@ -1,0 +1,73 @@
+class Listener implements KeyListener{
+    Ventana ventana;
+
+    public Listener(Ventana ventana){
+        this.ventana = ventana;
+    }        
+
+    @Override
+    public void keyTyped(KeyEvent ke) {
+        
+    }
+
+    @Override
+    public void keyPressed(KeyEvent ke) {
+        
+//        switch (ke.getKeyCode()) {
+//            case KeyEvent.VK_UP:
+//                ventana.escalar(1.2, 1.2);
+//                ventana.repaint();
+//                break;
+//            case KeyEvent.VK_RIGHT:
+//                ventana.traslacion(50, 50);
+//                ventana.repaint();
+//                break;
+//            case KeyEvent.VK_DOWN:
+//                ventana.escalar(.5,.5);
+//                ventana.repaint();
+//                break;
+//            case KeyEvent.VK_LEFT:
+//                ventana.traslacion(-50,-50);
+//                ventana.repaint();
+//                break;
+//            
+//        }
+        if (ke.getKeyCode() == KeyEvent.VK_UP){
+            ventana.escalar(1.2, 1.2);
+            ventana.repaint();
+        }
+        else if (ke.getKeyCode() == KeyEvent.VK_DOWN){
+            ventana.escalar(.5,.5);
+            ventana.repaint();
+        }
+        else if (ke.getKeyCode() == KeyEvent.VK_LEFT){
+            ventana.traslacion(-50, 0);
+            ventana.repaint();
+        }
+        else if (ke.getKeyCode() == KeyEvent.VK_RIGHT){
+            ventana.traslacion(50, 0);
+            ventana.repaint();
+        }
+        else if (ke.isAltDown() && ke.getKeyChar()!= 'a' && ke.getKeyCode() == KeyEvent.VK_A){
+            ventana.traslacion(0, 50);
+            ventana.repaint();
+        }
+        else if (ke.isAltDown() && ke.getKeyChar() != 'l' &&  ke.getKeyCode() == KeyEvent.VK_L){
+            ventana.traslacion(0, -50);
+            ventana.repaint();
+        }
+        else if (ke.isControlDown() && ke.getKeyChar() != 'm' &&  ke.getKeyCode() == KeyEvent.VK_M){
+            ventana.traslacion(50, -50);
+            ventana.repaint();
+        }
+        
+        
+        
+    }
+
+    @Override
+    public void keyReleased(KeyEvent ke) {
+        
+    }
+
+}
