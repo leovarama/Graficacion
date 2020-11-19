@@ -1,0 +1,63 @@
+package Proyecto;
+
+public class Principal {
+
+    public static void main(String[] args) {
+        Punto[] figura = {
+            new Punto(100, 400),
+            new Punto(700, 400),
+            new Punto(200, 400),
+            new Punto(200, 390),
+            new Punto(350, 390),
+            new Punto(350, 400),
+            new Punto(600, 400),
+            new Punto(600, 390),
+            new Punto(450, 390),
+            new Punto(450, 400),
+            new Punto(450, 385),
+            new Punto(435, 385),
+            new Punto(437, 385),
+            new Punto(437, 320),
+            new Punto(448, 320),
+            new Punto(448, 385),
+            new Punto(435, 385),
+            new Punto(435, 400),
+            new Punto(365, 400),
+            new Punto(365, 385),
+            new Punto(350, 385),
+            new Punto(352, 385),
+            new Punto(352, 320),
+            new Punto(363, 320),
+            new Punto(363, 385),
+            new Punto(350, 385),
+            new Punto(350, 400),
+            new Punto(385, 400),
+            new Punto(385, 340),
+            new Punto(415, 340),
+            new Punto(415, 400),
+            new Punto(200, 400),
+            new Punto(200, 250),
+            new Punto(350, 250),
+            new Punto(350, 315),
+            new Punto(347, 315),
+            new Punto(347, 320),
+            new Punto(452, 320),
+            new Punto(452, 315),
+            new Punto(350, 315),
+            new Punto(350, 225),
+            new Punto(400, 200),
+            new Punto(400, 140),
+            new Punto(450, 140),
+            new Punto(435, 155),
+            new Punto(450, 170),
+            new Punto(400, 170),
+            new Punto(400, 200),
+            new Punto(450, 225),
+            new Punto(450, 315),
+            new Punto(450, 250),
+            new Punto(600, 250),
+            new Punto(600, 400),};
+        new Ventana ("Proyecto Unidad 2", figura);
+    }
+    
+}
